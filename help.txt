@@ -1,0 +1,12 @@
+Spring Boot + AWS SNS Consumer.
+
+Note : Amazon Simple Notification Service (SNS) sends notifications two ways, A2A and A2P. 
+	A2A provides high-throughput, push-based, many-to-many messaging between distributed systems, microservices, and event-driven serverless applications. 
+	These applications include Amazon Simple Queue Service (SQS), Amazon Kinesis Data Firehose, AWS Lambda, and other HTTPS endpoints. 
+	A2P functionality lets you send messages to your customers with SMS texts, push notifications, and email. 
+
+How to Run : 
+1. Deploy this application on any AWS services like ECS, EC2
+2. Make public/accessible end point of this project.
+3. Provide you public end point as subscriber to the SNS Topic so that SNS topic can send notification to your end point which is configured inside the controller.
+4. SNS Topic must be created before the step 3.
